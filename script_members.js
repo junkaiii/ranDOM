@@ -1,7 +1,7 @@
 console.log('Test Members');
 $(function() {
 
-var memberapi = "https://crossorigin.me/https://servingapi.herokuapp.com/members";
+var memberapi = "https://servingapi.herokuapp.com/members";
 var $members = $('#members');
 
 var memberName;
