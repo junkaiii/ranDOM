@@ -35,7 +35,7 @@ $(function() {
       //  Weather output {:editable}
        weatherAPIWeather.text(data.weather[0].description);
       //  Weather Icon output {:editable}
-       weatherAPIWeatherIcon.attr("src", "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png");
+       weatherAPIWeatherIcon.attr("src", "https://openweathermap.org/img/w/" + data.weather[0].icon + ".png");
       //  Temperature output {:editable}
        weatherAPITemperature.text(data.main.temp.toFixed(1) + "Celcius");
     });
