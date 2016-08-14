@@ -46,3 +46,9 @@ a {
 #request span:active {
   text-shadow: none;
 }
+#output{
+  text-align: center;
+  max-width: 50%;
+  margin: 15px auto;
+  padding: 10px;
+}
