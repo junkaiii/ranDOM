@@ -5,8 +5,8 @@ $(function() {
   var $output_weather = $('#output_weather');
 
 
-  var locatorapi = 'http://api.wipmania.com/jsonp';
-  var weatherapi = 'http://api.openweathermap.org/data/2.5/weather';
+  var locatorapi = 'https://crossorigin.me/http://api.wipmania.com/jsonp';
+  var weatherapi = 'https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather';
   var apikey = '25c1e185ccfb414ffc4061313e567ab2';
 
 
