@@ -4,10 +4,10 @@ $(function() {
   var $request = $('#request');
   var $bio = $('#bio');
   var $output = $('#output');
-  var url_api = 'https://andruxnet-random-famous-quotes.p.mashape.com/?cat=movies'
+  var url_api = 'https://andruxnet-random-famous-quotes.p.mashape.com/';
   // var url_api = 'https://andruxnet-random-famous-quotes.p.mashape.com/'
-  var api_key = '5YLQrzUFnSmshxGAypr5wO73X8Uzp1BoNthjsnXFYT8XutFo0x'
-  var api_type = 'application/x-www-form-urlencoded'
+  var api_key = '5YLQrzUFnSmshxGAypr5wO73X8Uzp1BoNthjsnXFYT8XutFo0x';
+  var api_type = 'application/x-www-form-urlencoded';
 
   $request.on('click', function(e) {
     // alert('test');
@@ -17,8 +17,9 @@ $(function() {
     $.ajax({
         url: url_api,
         dataType: 'json',
-        content_Type: api_type,
-        data: api_key,
+        headers: {
+          'X-Mashape-Key': api_key,
+          'Content-type' : api_type},
 
 
         // data: {'application/x-www-form-urlencoded'}
@@ -43,8 +44,9 @@ $(function() {
   function successFunction(data) {
 
     $bio.css('border', '1px solid grey');
-    $loader.hide();
-    $bio.html("hello" + data);
+    // console.log(data);
+    // $loader.hide();
+    $bio.html(data.quote);
     //
   }
   //
