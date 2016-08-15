@@ -46,7 +46,7 @@ a {
 #request span:active {
   text-shadow: none;
 }
-#output{
+#bio{
   text-align: center;
   max-width: 50%;
   margin: 15px auto;

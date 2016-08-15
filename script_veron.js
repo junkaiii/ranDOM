@@ -43,10 +43,10 @@ $(function() {
 
   function successFunction(data) {
 
-    $bio.css('border', '1px solid grey');
+    // $bio.css('border', '1px solid grey');
     // console.log(data);
-    // $loader.hide();
-    $bio.html(data.quote);
+    // loader.hide();
+    $bio.html("Quote:" + data.quote + "Author:" + data.author);
     //
   }
   //
